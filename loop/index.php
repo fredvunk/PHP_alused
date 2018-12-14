@@ -56,3 +56,34 @@ for($arv1 = 1; $arv1 <= 10; $arv1++){
     echo '</tr>'; // rea lõpp
 }
 echo '</table>'; // tabeli lõpp
+echo '<hr>';
+
+$arv = 123;
+$numbriteSumma = 0;
+while ($arv !=0) {
+//    leiame numbri
+    $number = $arv % 10;
+    echo 'Number = '.$number.'<br>';
+//    valmistame arvu järgmiseks tsükli sammuks
+    $arv = $arv / 10;
+        settype($arv,  int);
+    echo 'Uus arv on '.$arv.'<br>';
+//    leiame ka hetkel oleva summa
+    $numbriteSumma = $numbriteSumma + $number;
+    echo 'Hetkel summa = '.$numbriteSumma.'<br>';
+}
+echo 'Lõplik summa = '.$numbriteSumma.'<br>';
+echo '<hr>';
+
+$arv = 44258755745;
+//leia, mitu korda siin esinemas number 5;
+$numberKokku = 0;
+while ($arv != 0) {
+    $number = $arv % 10;
+    if($number == 5) {
+        $numberKokku = $numberKokku +1; // $numberkokku++;
+    }
+    $arv = $arv / 10;
+    settype($arv, 'int');
+}
+echo 'Number 5 esineb antud arvus '.$numberKokku.' korda<br>';
