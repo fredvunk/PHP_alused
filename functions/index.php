@@ -1,14 +1,15 @@
 <html>
 <head>
-    <title>Listing 6.4</title>
+    <title>Listing 6.5</title>
 </head>
 <body>
 <?php
-function  addNums($firstnum, $secondnum)
+function sayHello()
 {
-    $result = $firstnum + $secondnum;
-    return $result;}
-print addNums (3,5);
+    print "hello<br>";
+}
+$function_holder = "sayHello";
+$function_holder();
 ?>
 </body>
 </html>
