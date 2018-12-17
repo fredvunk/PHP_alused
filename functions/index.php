@@ -1,14 +1,15 @@
 <html>
 <head>
-    <title>Listing 6.6</title>
+    <title>Listing 6.7</title>
 </head>
 <body>
 <?php
-function test()
+$life = 42;
+function meaningOfLife()
 {
-    $testvariable = "this is a test  variable";
+    print "The meaning of life is $life<br>";
 }
-print "test variable: $testvariable<br>";
+meaningOfLife();
 ?>
 </body>
 </html>
