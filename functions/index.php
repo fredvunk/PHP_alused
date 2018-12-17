@@ -1,14 +1,16 @@
 <html>
 <head>
-    <title>Listing 6.2</title>
+    <title>Listing 6.3</title>
 </head>
 <body>
 <?php
-function bighello()
+function printBR($txt)
 {
-    print "<h1>HELLO!</h1>";
+    print("$txt<br>\n");
 }
-bighello();
+printBR("This is a line");
+printBR("This is a new line");
+printBR("This is yet another line");
 ?>
 </body>
 </html>
