@@ -1,12 +1,14 @@
 <html>
 <head>
-    <title>Listing 6.1</title>
+    <title>Listing 6.2</title>
 </head>
 <body>
 <?php
-$num = - 321;
-$newnum = abs ($num);
-print $newnum;
+function bighello()
+{
+    print "<h1>HELLO!</h1>";
+}
+bighello();
 ?>
 </body>
 </html>
