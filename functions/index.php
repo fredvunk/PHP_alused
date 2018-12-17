@@ -1,21 +1,17 @@
 <html>
 <head>
-    <title>Listing 6.10</title>
+    <title>Listing 6.11</title>
 </head>
 <body>
 <?php
-$life = 42;
-$num_of_calls = 0;
-function andAnotherThing($txt)
+function fontWrap($txt, $size)
 {
-    static $num_of_calls = 0;
-    $num_of_calls++;
-    print "<h1>$num_of_calls. $txt</h1>";
+    print "<font size=\"$size\"face=\"Helvetica,Arial,Sans-serif\">$txt</font>";
 }
-andAnotherThing("Widgets");
-print("We build a fine range of widgets<p>");
-andAnotherThing("Doodads");
-print("Finest in the world<p>");
+fontWrap("A heading<br>",5);
+fontWrap("some body text<br>",3);
+fontWrap("some more body text<br>",3);
+fontWrap("yet more body text<br>",3);
 ?>
 </body>
 </html>
