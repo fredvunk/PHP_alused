@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Listing 6.9</title>
+    <title>Listing 6.10</title>
 </head>
 <body>
 <?php
@@ -8,7 +8,7 @@ $life = 42;
 $num_of_calls = 0;
 function andAnotherThing($txt)
 {
-    global $num_of_calls;
+    static $num_of_calls = 0;
     $num_of_calls++;
     print "<h1>$num_of_calls. $txt</h1>";
 }
