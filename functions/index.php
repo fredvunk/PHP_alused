@@ -4,12 +4,12 @@
 </head>
 <body>
 <?php
-function addFive($num)
+function addFive(&$num)
 {
     $num += 5;
 }
 $orignum = 10;
-addFive(&$orignum);
+addFive($orignum);
 print($orignum);
 ?>
 </body>
