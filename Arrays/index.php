@@ -18,7 +18,12 @@ for($i = 0; $i < $kasutajadKokku; $i++) {
 }
 
 $uuedKasutajad = array_merge($kasutajad, $lisaKasutajad);
-for($i = 0; $i < $uuedKasutajad; $i++) {
+for($i = 0; $i < count($uuedKasutajad); $i++) {
     echo $uuedKasutajad[$i].'<br>';
 }
 
+echo '<hr>';
+
+foreach ($uuedKasutajad as $kasutaja) {
+    echo $kasutaja.'<br>';
+}
