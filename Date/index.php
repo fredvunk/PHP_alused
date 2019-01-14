@@ -24,3 +24,9 @@ $arv2 = 54;
 $arv3 = 22;
 $aasta = 2018;
 $aasta2 = 2017;
+
+if(checkdate(12,32,2013)) {
+    echo('Kuupäev korras!');
+} else {
+    echo ('Kuupäev on valesti sisestatud');
+}
