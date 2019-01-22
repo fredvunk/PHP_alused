@@ -1,4 +1,10 @@
 <?php
+//$allikas = 'pallivise.csv';
+//$minu_csv = fopen($allikas, 'r') or die('Ei leia faili!');
+//$rida = fgetcsv($minu_csv, filesize($allikas),';');
+//var_dump($rida);
+//fclose($minu_csv);
+
 $allikas = 'pallivise.csv';
 $minu_csv = fopen($allikas, 'r') or die('Ei leia faili!');
 $jrk = 1;
