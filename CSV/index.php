@@ -19,15 +19,19 @@
 //    echo '<br>';
 //}
 //fclose($minu_csv);
-$allikas = 'emailid.txt';
-$minu_fail = fopen($allikas, 'r');
-$faili_sisu = file_get_contents($allikas);
-$massiiv = explode("\n", $faili_sisu); //tükeldab rea lõpust
-$suurus = count($massiiv);
-for ($i = 0; $i <$suurus; $i++) {
-    $rida = $massiiv[$i];
-    $nimi = explode('(at)',$rida); //tükeldab @ märgi kohast
-    echo $nimi[0].'<br>';
-    }
-    fclose($minu_fail);
+//$allikas = 'emailid.txt';
+//$minu_fail = fopen($allikas, 'r');
+//$faili_sisu = file_get_contents($allikas);
+//$massiiv = explode("\n", $faili_sisu); //tükeldab rea lõpust
+//$suurus = count($massiiv);
+//for ($i = 0; $i <$suurus; $i++) {
+//    $rida = $massiiv[$i];
+//    $nimi = explode('(at)',$rida); //tükeldab @ märgi kohast
+//    echo $nimi[0].'<br>';
+//    }
+//    fclose($minu_fail);
+
+$nimed = array('jyri', 'mari', 'juhan', 'kr66t', 'gusta');
+$emailid = implode(", ", $nimed);
+echo $emailid;
 
